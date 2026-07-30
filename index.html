@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="--verde:#1F3A2E;--verde-escuro:#00160a;--mostarda:#E8A33D;--ferrugem:#C1440E;--creme:#F7F2E7;--tinta:#20241E;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Vitrine</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231F3A2E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='900' fill='%23E8A33D' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,600&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<section class="hero fade-in">
+  <div>
+    <div class="eyebrow">Vitrine de Produtos</div>
+    <h1>O melhor do seu negócio, numa página só.</h1>
+    <p>Apresente seus produtos com fotos, preços e uma chamada direta para o cliente comprar. Edite os textos e imagens como quiser — os botões abaixo já vêm prontos.</p>
+    <div class="hero-actions">
+      <a href="#produtos" class="btn-cta solid">Ver produtos</a>
+      <a href="#contato" class="btn-cta ghost">Saiba mais</a>
+    </div>
+  </div>
+  <div class="hero-figure"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=80" alt="Imagem de destaque"></div>
+</section>
+
+<section class="sobre fade-in">
+  <div class="sobre-head">
+    <div class="eyebrow">Por que comprar aqui</div>
+    <h2>Três motivos para escolher a gente</h2>
+  </div>
+  <div class="diferenciais">
+    <div class="diferencial"><div class="num">01</div><h3>Qualidade garantida</h3><p>Cada produto é selecionado com cuidado antes de chegar até você.</p></div>
+    <div class="diferencial"><div class="num">02</div><h3>Entrega rápida</h3><p>Enviamos para todo o Brasil com prazos curtos e rastreio.</p></div>
+    <div class="diferencial"><div class="num">03</div><h3>Suporte direto</h3><p>Fale com a gente pelo WhatsApp e tire suas dúvidas na hora.</p></div>
+  </div>
+</section>
+
+<section class="produtos fade-in" id="produtos">
+  <div class="produtos-head"><div><div class="eyebrow">Catálogo</div><h2>Nossos produtos</h2></div></div>
+  <div class="grid-produtos">
+      <div class="card">
+        <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="Produto Um"></div>
+        <div class="card-body">
+          <span class="tag-preco">R$ 89,90</span>
+          <h3>Produto Um</h3>
+          <p>Descrição curta do produto, destacando seu principal benefício.</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-comprar" onclick='comprar("Produto Um","R$ 89,90")'>Comprar agora</button>
+        </div>
+      </div>\n
+      <div class="card">
+        <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=80" alt="Produto Dois"></div>
+        <div class="card-body">
+          <span class="tag-preco">R$ 129,00</span>
+          <h3>Produto Dois</h3>
+          <p>Descrição curta do produto, destacando seu principal benefício.</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-comprar" onclick='comprar("Produto Dois","R$ 129,00")'>Comprar agora</button>
+        </div>
+      </div>\n
+      <div class="card">
+        <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500&q=80" alt="Produto Três"></div>
+        <div class="card-body">
+          <span class="tag-preco">R$ 59,90</span>
+          <h3>Produto Três</h3>
+          <p>Descrição curta do produto, destacando seu principal benefício.</p>
+        </div>
+        <div class="card-actions">
+          <button class="btn-comprar" onclick='comprar("Produto Três","R$ 59,90")'>Comprar agora</button>
+        </div>
+      </div></div>
+</section>
+
+
+
+
+<section class="contato fade-in" id="contato">
+  <h2>Ficou com alguma dúvida?</h2>
+  <p>Fale direto com a gente pelo WhatsApp e receba atendimento rápido.</p>
+  <div><span class="eyebrow" style="color:#3c2c10">Número: </span><span class="whats-num" id="whatsNum">5511999998888</span></div>
+  <div style="margin-top:20px;"><button class="btn-cta solid" onclick="abrirWhats()" style="border-radius:2px;">Falar no WhatsApp</button></div>
+</section>
+<footer class="fade-in">© 2026 — <span>Sua Loja</span>. Página criada com o editor de vitrine.</footer>
+
+<button id="btnTopo" title="Voltar ao topo">↑</button>
+<button id="btnWhatsFloat" title="Falar no WhatsApp">☎</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
